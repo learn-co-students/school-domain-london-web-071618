@@ -11,11 +11,14 @@ class School
   end 
   
   def add_student(name, grade)
-    @name = name 
+    @name = name
     @grade = grade
-    
+
+    #binding.pry
+
     if @roster.has_key?(grade)
-    @roster[grade] << name
+      # binding.pry
+      @roster[grade] << name
     else
       @roster[grade] = []
       @roster[grade] << name
@@ -33,9 +36,21 @@ class School
   def sort
     
     @roster.each  do |k,v| 
-    sorted = v.sort
-    @roster[k] = sorted
+      sorted = v.sort
+      @roster[k] = sorted
     end 
-  
   end 
+ 
 end 
+
+# school = School.new("Bayside High School")
+
+# school.add_student("Zach Morris", 9)
+# school.add_student("AC Slater", 9)
+# school.add_student("Kelly Kapowski", 10)
+# school.add_student("Screech", 11)
+# school.roster
+
+# binding.pry
+
+#puts "asdasd"
