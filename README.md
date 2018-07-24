@@ -1,4 +1,4 @@
-# Domain Model for a School
+what-does-or-equals-mean-in-ruby# Domain Model for a School
 
 ## Objectives
 
